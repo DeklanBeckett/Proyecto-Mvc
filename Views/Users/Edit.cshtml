@@ -1,0 +1,47 @@
+  <div style="display: flex;  ">
+         <a class="nav-link " asp-area="" asp-controller="Dash" asp-action="Index" style="margin: 20px;">Inicio</a>
+        <p style="margin: 20px;">Gestion de usuarios</p>
+    </div>
+
+<div class="row">
+    <div class="row  mt-5">
+
+    <center>
+<div>
+ <div class="col-md-7">
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombres</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pedro">
+    
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gonzales">
+    
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pedro@pedro">
+    
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">genero</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hombre">
+    
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Edad</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="22">
+    
+  </div>
+  
+</form>
+
+  <center>
+  <a asp-area="" asp-controller="Users" asp-action="Update" ><button type="submit" class="btn btn-warning">Editar</button></a>
+  </center>
+ </div>
+ </div>
+    </center>
+</div>

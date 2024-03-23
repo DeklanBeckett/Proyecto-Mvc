@@ -1,0 +1,40 @@
+<div class="container">
+    <div style="display: flex;  ">
+         <a class="nav-link " asp-area="" asp-controller="Dash" asp-action="Index" style="margin: 20px;">Inicio</a>
+        <p style="margin: 20px;">Gestion de usuarios</p>
+    </div>
+    <div>
+        
+        <a asp-controller="Users" asp-action="Create"><button class="btn btn-primary"  >Crear Nuevo  Usuario</button></a>
+    </div>
+    <div class="row mt-5">
+        
+    <table class="table table-dark" >
+    <thead>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Género</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>juan@example.com</td>
+            <td>Masculino</td>
+            <td>30</td>
+            <td>
+            <a asp-controller="Users" asp-action="Eliminar"><button class="btn btn-danger">eliminar</button></a>
+            <a  asp-controller="Users" asp-action="Edit"> <button class="btn btn-warning">editar</button></a>
+            <a  asp-controller="Users" asp-action="Show"> <button class="btn btn-info"> detalles</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+</div>
